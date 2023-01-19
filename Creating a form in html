@@ -1,1 +1,23 @@
+Creating a form in html
 
+Start by enclosing in the <form> tag
+add an action to be performed eg. entering a url
+select user input via the type attribute eg. text, email and name the action
+a placeholder givers user a clue about the input needed
+the required attribute prevents the form being submitted with missing information. Just ensure space around required word and other attributes
+Button element is used to create a clickable button eg. <button>Click Here</button>
+-without attributes, clicking form button will submit to action location
+input field and button appear on same line as they are in-line elements which don't appear on new lines
+add type attribute to button for clarity
+
+<form action="https://freecatphotoapp.com/submit-cat-photo">
+<input type="text" name="catphotourl" placeholder="cat photo URL" required>
+<button type="submit">Submit</button>
+</form>
+
+Radio button allows you to select one option from many eg. <input type="radio"> Indoor
+label tag allows you to select the radio button by clicking the word next to the button eg.  <label><input type="radio"> Indoor</label>
+the id attribute helps identify the html element
+for selection of one button to deselect the other, give butons the same name attribute
+form data for the button is based on its name and value attributes. For convenience, set the button's value attribute to the same value as its id attribute.
+eg.  <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" > Indoor</label>
